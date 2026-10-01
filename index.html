@@ -1,0 +1,1204 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Katalog informasi aset lelang tanah dan bangunan."
+    />
+    <title>Katalog Aset Lelang | Bank Jatim Cabang Caruban</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#beranda" aria-label="Katalog Aset Lelang">
+          <span class="brand-mark">BJ</span>
+          <span class="brand-text"
+            ><strong>ASET LELANG</strong
+            ><small>Bank Jatim Cabang Caruban</small></span
+          >
+        </a>
+        <a class="nav-contact" href="#kontak"
+          >Hubungi Kami <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="beranda">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <span class="eyebrow"
+              ><span class="eyebrow-dot"></span> KATALOG ASET</span
+            >
+            <h1>Temukan aset,<br /><em>mulai peluang baru bersama Bank Jatim Cabang Caruban.</em></h1>
+            <p>
+              Informasi aset tanah dan bangunan yang tersedia untuk proses
+              lelang. Lihat foto, spesifikasi, dan lokasi aset dalam satu
+              halaman.
+            </p>
+            <a class="button button-light" href="#katalog"
+              >Jelajahi Katalog <span aria-hidden="true">↓</span></a
+            >
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="art-card art-card-back">
+              <span>ASET</span><span>LELANG</span>
+            </div>
+            <div class="art-card art-card-front">
+              <div class="art-sky"></div>
+              <div class="art-building"><i></i><i></i><i></i><i></i></div>
+              <div class="art-ground"></div>
+              <span class="art-tag">TANAH & BANGUNAN</span>
+            </div>
+            <div class="art-stamp">INFORMASI<br />ASET</div>
+          </div>
+        </div>
+        <div class="hero-bottom-line"></div>
+      </section>
+
+      <section class="catalog-section container" id="katalog">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">PILIHAN ASET</span>
+            <h2>Katalog lelang</h2>
+            <p class="section-desc">
+              Klik foto atau kartu aset untuk melihat galeri dan detail lengkap.
+            </p>
+          </div>
+          <div class="catalog-tools">
+            <label class="search-box"
+              ><span aria-hidden="true">⌕</span
+              ><input
+                id="searchInput"
+                type="search"
+                placeholder="Cari lokasi atau jenis aset..."
+                aria-label="Cari aset"
+            /></label>
+            <select id="typeFilter" aria-label="Filter jenis aset">
+              <option value="all">Semua aset</option>
+              <option value="tanah">Tanah</option>
+              <option value="bangunan">Tanah & Bangunan</option>
+            </select>
+          </div>
+        </div>
+        <div class="results-line">
+          <span id="resultCount">2 aset ditampilkan</span
+          ><span class="demo-note">* Data contoh dari materi referensi</span>
+        </div>
+        <div class="property-grid" id="propertyGrid">
+          <article
+            class="property-card"
+            data-type="tanah"
+            data-search="tanah pekarangan batok gemarang madiun"
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="0"
+              aria-label="Lihat foto aset tanah di Batok"
+            >
+              <img
+                src="assets/aset-1-foto-utama.jpg"
+                alt="Kondisi lahan aset di Desa Batok"
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH</span>
+              </div>
+              <h3>Tanah Pekarangan — Desa Batok</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> Kec. Gemarang, Kab. Madiun
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>1.762 m²</strong></div>
+                <div><small>Dokumen</small><strong>SHM No. 01726</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 109.000.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="0">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="bangunan"
+            data-search="tanah bangunan selasar klitik wonoasri madiun jl raya madiun nganjuk"
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="1"
+              aria-label="Lihat foto aset tanah dan bangunan di Klitik"
+            >
+              <img
+                src="assets/aset-2-foto-utama.jpg"
+                alt="Tampak depan aset tanah dan bangunan di Klitik"
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH & BANGUNAN</span>
+              </div>
+              <h3>Tanah & Bangunan — Desa Klitik</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> Kec. Wonoasri, Kab. Madiun
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>409 m²</strong></div>
+                <div><small>Luas bangunan</small><strong>135 m²</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 1.055.400.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="1">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="bangunan"
+            data-search="tanah bangunan di Desa Sukosari, Kecamatan Babadan, Kabupaten Ponorogo, Jawa Timur"
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="2"
+              aria-label="Lihat foto aset tanah dan bangunan di Sukosari"
+            >
+              <img
+                src="assets/cristian-foto-1.png"
+                alt="Tampak depan aset tanah dan bangunan di Sukosari"
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH & BANGUNAN</span>
+              </div>
+              <h3>Tanah & Bangunan — Desa Sukosari</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> Desa Sukosari, Kecamatan Babadan, Kabupaten Ponorogo, Jawa Timur.
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>495 m²</strong></div>
+                <div><small>Luas bangunan</small><strong>594 m²</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 1.399.000.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="2">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="bangunan"
+            data-search="tanah bangunan di Jl. Samudra Pasai 7 RT01 RW05 NO.41 Kel. Kadipiro Kec. Banjarsari Kota Surakarta."
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="3"
+              aria-label="Lihat foto aset tanah dan bangunan di Jl. Samudra Pasai 7 RT01 RW05 NO.41 Kel. Kadipiro Kec. Banjarsari Kota Surakarta."
+            >
+              <img
+                src="assets/hibba-1.png"
+                alt="Tampak depan aset tanah dan bangunan di Jl. Samudra Pasai 7 RT01 RW05 NO.41 Kel. Kadipiro Kec. Banjarsari Kota Surakarta."
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH & BANGUNAN</span>
+              </div>
+              <h3>Tanah & Bangunan - Kel. Kadipiro</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> Jl. Samudra Pasai 7 RT01 RW05 NO.41 Kel. Kadipiro Kec. Banjarsari Kota Surakarta.
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>766 m²</strong></div>
+                <div><small>Luas bangunan</small><strong>799 m²</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 5.662.200.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="3">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="bangunan"
+            data-search="tanah bangunan di Kelurahan Pilangbango, Kecamatan Kartoharjo, Kota Madiun."
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="4"
+              aria-label="Lihat foto aset tanah dan bangunan di Kelurahan Pilangbango, Kecamatan Kartoharjo, Kota Madiun."
+            >
+              <img
+                src="assets/wawan-foto-1.png"
+                alt="Tampak depan aset tanah dan bangunan di Kelurahan Pilangbango, Kecamatan Kartoharjo, Kota Madiun."
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH & BANGUNAN</span>
+              </div>
+              <h3>Tanah & Bangunan - Kel. Pilangbango</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> Kelurahan Pilangbango, Kecamatan Kartoharjo, Kota Madiun.
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>96 m²</strong></div>
+                <div><small>Luas bangunan</small><strong>130 m²</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 399.000.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="4">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="bangunan"
+            data-search="tanah bangunan di RUKO GRAND CARUBAN Desa Buduran Kec. Wonoasri Kab. Madiun."
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="5"
+              aria-label="Lihat foto aset tanah dan bangunan di RUKO GRAND CARUBAN Desa Buduran Kec. Wonoasri Kab. Madiun."
+            >
+              <img
+                src="assets/umiati-1.png"
+                alt="Tampak depan aset tanah dan bangunan di RUKO GRAND CARUBAN Desa Buduran Kec. Wonoasri Kab. Madiun."
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH & BANGUNAN</span>
+              </div>
+              <h3>Tanah & Bangunan - RUKO GRAND CARUBAN</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> RUKO GRAND CARUBAN Desa Buduran Kec. Wonoasri Kab. Madiun.
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>52 m²</strong></div>
+                <div><small>Luas bangunan</small><strong>104 m²</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 406.640.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="5">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="bangunan"
+            data-search="tanah bangunan di  Desa Ngampel, Kecamatan Mejayan, Kabupaten Madiun."
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="6"
+              aria-label="Lihat foto aset tanah dan bangunan di  Desa Ngampel, Kecamatan Mejayan, Kabupaten Madiun."
+            >
+              <img
+                src="assets/paidis-1.png"
+                alt="Tampak depan aset tanah dan bangunan di  Desa Ngampel, Kecamatan Mejayan, Kabupaten Madiun."
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH & BANGUNAN</span>
+              </div>
+              <h3>Tanah & Bangunan - Desa Ngampel</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> Desa Ngampel, Kecamatan Mejayan, Kabupaten Madiun.
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>140 m²</strong></div>
+                <div><small>Luas bangunan</small><strong>102 m²</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 340.800.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="6">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="tanah"
+            data-search="tanah  di  Desa Ngampel, Kecamatan Mejayan, Kabupaten Madiun."
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="7"
+              aria-label="Lihat foto aset tanah dan bangunan di  Desa Ngampel, Kecamatan Mejayan, Kabupaten Madiun."
+            >
+              <img
+                src="assets/paidi-1.png"
+                alt="Tampak depan aset tanah di  Desa Ngampel, Kecamatan Mejayan, Kabupaten Madiun."
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH</span>
+              </div>
+              <h3>Tanah - Desa Ngampel</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> Desa Ngampel, Kecamatan Mejayan, Kabupaten Madiun.
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>2080 m²</strong></div>
+                <div><small>Dokumen</small><strong>SHM No.484</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 278.800.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="7">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="bangunan"
+            data-search="tanah bangunan di Desa Sidorejo, Kecamatan Mejayan, Kabupaten Madiun."
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="8"
+              aria-label="Lihat foto aset tanah dan bangunan di JL LINGKUNGAN, DESA SIDOREJO, KECAMATAN SARADAN, KABUPATEN MADIUN."
+            >
+              <img
+                src="assets/warsini-1.png"
+                alt="Tampak depan aset tanah dan bangunan di  JL LINGKUNGAN, DESA SIDOREJO, KECAMATAN SARADAN, KABUPATEN MADIUN."
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH & BANGUNAN</span>
+              </div>
+              <h3>Tanah & Bangunan - Desa Sidorejo</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> JL LINGKUNGAN, DESA SIDOREJO, KECAMATAN SARADAN, KABUPATEN MADIUN.
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>187 m²</strong></div>
+                <div><small>Luas bangunan</small><strong>126 m²</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 108.000.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="8">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="bangunan"
+            data-search="tanah bangunan di Desa Sidorejo, Kecamatan Mejayan, Kabupaten Madiun."
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="9"
+              aria-label="Lihat foto aset tanah dan bangunan di JL LINGKUNGAN, DESA SIDOREJO, KECAMATAN SARADAN, KABUPATEN MADIUN."
+            >
+              <img
+                src="assets/suparman-1.png"
+                alt="Tampak depan aset tanah dan bangunan di  JL LINGKUNGAN, DESA SIDOREJO, KECAMATAN SARADAN, KABUPATEN MADIUN."
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH & BANGUNAN</span>
+              </div>
+              <h3>Tanah & Bangunan - Desa Sidorejo</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> JL LINGKUNGAN, DESA SIDOREJO, KECAMATAN SARADAN, KABUPATEN MADIUN.
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>473 m²</strong></div>
+                <div><small>Luas bangunan</small><strong>205 m²</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 199.000.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="9">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="bangunan"
+            data-search="tanah bangunan di JL LINGKUNGAN, DESA SIDOREJO, KECAMATAN SARADAN, KABUPATEN MADIUN."
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="10"
+              aria-label="Lihat foto aset tanah dan bangunan di JL LINGKUNGAN, DESA SIDOREJO, KECAMATAN SARADAN, KABUPATEN MADIUN."
+            >
+              <img
+                src="assets/marsinem-1.png"
+                alt="Tampak depan aset tanah dan bangunan di  JL LINGKUNGAN, DESA SIDOREJO, KECAMATAN SARADAN, KABUPATEN MADIUN."
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH & BANGUNAN</span>
+              </div>
+              <h3>Tanah & Bangunan - Desa Sidorejo</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> JL LINGKUNGAN, DESA SIDOREJO, KECAMATAN SARADAN, KABUPATEN MADIUN.
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>285 m²</strong></div>
+                <div><small>Luas bangunan</small><strong>138 m²</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 99.000.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="10">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="bangunan"
+            data-search="tanah bangunan di Desa Buduran Kecamatan Wonoasri Kabupaten Madiun."
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="11"
+              aria-label="Lihat foto aset tanah dan bangunan di Desa Buduran Kecamatan Wonoasri Kabupaten Madiun."
+            >
+              <img
+                src="assets/fitri-1.png"
+                alt="Tampak depan aset tanah dan bangunan di  Desa Buduran Kecamatan Wonoasri Kabupaten Madiun."
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH & BANGUNAN</span>
+              </div>
+              <h3>Tanah & Bangunan - Desa Buduran</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> Desa Buduran Kecamatan Wonoasri Kabupaten Madiun.
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>1.242 m²</strong></div>
+                <div><small>Luas bangunan</small><strong>400 m²</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 888.484.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="11">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="bangunan"
+            data-search="tanah bangunan di Desa Buduran Kecamatan Wonoasri Kabupaten Madiun."
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="12"
+              aria-label="Lihat foto aset tanah dan bangunan di Desa Batok, Kecamatan Gemarang, Kabupaten Madiun."
+            >
+              <img
+                src="assets/imam-1.png"
+                alt="Tampak depan aset tanah dan bangunan di  Desa Batok, Kecamatan Gemarang, Kabupaten Madiun."
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH & BANGUNAN</span>
+              </div>
+              <h3>Tanah & Bangunan - Desa Batok</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> Desa Batok, Kecamatan Gemarang, Kabupaten Madiun.
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>55 m²</strong></div>
+                <div><small>Luas bangunan</small><strong>40 m²</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 69.000.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="12">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="bangunan"
+            data-search="tanah bangunan di Desa Batok, Kecamatan Gemarang, Kabupaten Madiun."
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="13"
+              aria-label="Lihat foto aset tanah dan bangunan di Desa Batok, Kecamatan Gemarang, Kabupaten Madiun."
+            >
+              <img
+                src="assets/imam1-1.png"
+                alt="Tampak depan aset tanah dan bangunan di  Desa Batok, Kecamatan Gemarang, Kabupaten Madiun."
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH & BANGUNAN</span>
+              </div>
+              <h3>Tanah & Bangunan - Desa Batok</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> Desa Batok, Kecamatan Gemarang, Kabupaten Madiun.
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>974 m²</strong></div>
+                <div><small>Luas bangunan</small><strong>500 m²</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 306.000.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="13">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="tanah"
+            data-search="tanah di Desa Batok, Kecamatan Gemarang, Kabupaten Madiun."
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="14"
+              aria-label="Lihat foto aset tanah di Desa Batok, Kecamatan Gemarang, Kabupaten Madiun."
+            >
+              <img
+                src="assets/amini-1.png"
+                alt="Tampak depan aset tanah di Desa Batok, Kecamatan Gemarang, Kabupaten Madiun."
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH</span>
+              </div>
+              <h3>Tanah - Desa Batok</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> Desa Batok, Kecamatan Gemarang, Kabupaten Madiun.
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>6.090 m²</strong></div>
+                <div><small>Dokumen</small><strong>00785 a.n. Siti Amini</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 370.000.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="14">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="tanah"
+            data-search="tanah di Desa Nampu, Kecamatan Gemarang, Kabupaten Madiun."
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="15"
+              aria-label="Lihat foto aset tanah di Desa Nampu, Kecamatan Gemarang, Kabupaten Madiun."
+            >
+              <img
+                src="assets/suparno-1.png"
+                alt="Tampak depan aset tanah di Desa Nampu, Kecamatan Gemarang, Kabupaten Madiun."
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH</span>
+              </div>
+              <h3>Tanah - Desa Nampu</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> Desa Nampu, Kecamatan Gemarang, Kabupaten Madiun.
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>1.882 m²</strong></div>
+                <div><small>Dokumen</small><strong>650 a.n. Suparno</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 99.000.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="15">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="bangunan"
+            data-search="tanah bangunan di Desa Sidomulyo, Kecamatan Wonoasri, Kabupaten Madiun."
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="16"
+              aria-label="Lihat foto aset tanah dan bangunan di Desa Sidomulyo, Kecamatan Wonoasri, Kabupaten Madiun."
+            >
+              <img
+                src="assets/mulyadi-1.png"
+                alt="Tampak depan aset tanah dan bangunan di Desa Sidomulyo, Kecamatan Wonoasri, Kabupaten Madiun."
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH & BANGUNAN</span>
+              </div>
+              <h3>Tanah & Bangunan - Desa Sidomulyo</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> Desa Sidomulyo, Kecamatan Wonoasri, Kabupaten Madiun.
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>342 m²</strong></div>
+                <div><small>Luas bangunan</small><strong>240 m²</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 660.700.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="16">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="bangunan"
+            data-search="tanah bangunan di Desa Sidomulyo, Kecamatan Wonoasri, Kabupaten Madiun."
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="17"
+              aria-label="Lihat foto aset tanah dan bangunan di Desa Sidomulyo, Kecamatan Wonoasri, Kabupaten Madiun."
+            >
+              <img
+                src="assets/mulyadi1-1.png"
+                alt="Tampak depan aset tanah dan bangunan di Desa Sidomulyo, Kecamatan Wonoasri, Kabupaten Madiun."
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH & BANGUNAN</span>
+              </div>
+              <h3>Tanah & Bangunan - Desa Sidomulyo</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> Desa Sidomulyo, Kecamatan Wonoasri, Kabupaten Madiun.
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>485 m²</strong></div>
+                <div><small>Luas bangunan</small><strong>70 m²</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 445.900.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="17">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="bangunan"
+            data-search="tanah bangunan di Jl. Klana Sewandana, Desa Plumpungrejo, Kecamatan Wonoasri, Kab. Madiun."
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="18"
+              aria-label="Lihat foto aset tanah dan bangunan di Jl. Klana Sewandana, Desa Plumpungrejo, Kecamatan Wonoasri, Kab. Madiun."
+            >
+              <img
+                src="assets/mulyadi2-1.png"
+                alt="Tampak depan aset tanah dan bangunan di Jl. Klana Sewandana, Desa Plumpungrejo, Kecamatan Wonoasri, Kab. Madiun."
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH & BANGUNAN</span>
+              </div>
+              <h3>Tanah & Bangunan - Desa Plumpungrejo</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> Jl. Klana Sewandana, Desa Plumpungrejo, Kecamatan Wonoasri, Kab. Madiun.
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>485 m²</strong></div>
+                <div><small>Luas bangunan 1</small><strong>60 m²</strong></div>
+                <div><small>Luas bangunan 2</small><strong>150 m²</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 353.900.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="18">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="bangunan"
+            data-search="tanah bangunan di Desa Kebonagung, Kecamatan Balerejo, Kabupaten Madiun."
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="19"
+              aria-label="Lihat foto aset tanah dan bangunan di Desa Kebonagung, Kecamatan Balerejo, Kabupaten Madiun."
+            >
+              <img
+                src="assets/sunjoto-1.png"
+                alt="Tampak depan aset tanah dan bangunan di Desa Kebonagung, Kecamatan Balerejo, Kabupaten Madiun."
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH & BANGUNAN</span>
+              </div>
+              <h3>Tanah & Bangunan - Desa Kebonagung</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> Desa Kebonagung, Kecamatan Balerejo, Kabupaten Madiun.
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>814 m²</strong></div>
+                <div><small>Luas bangunan 1</small><strong>315 m²</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 837.700.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="19">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="bangunan"
+            data-search="tanah bangunan di Desa Dimong, Kecamatan Madiun, Kabupaten Madiun."
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="20"
+              aria-label="Lihat foto aset tanah dan bangunan di Desa Dimong, Kecamatan Madiun, Kabupaten Madiun."
+            >
+              <img
+                src="assets/sugeng-1.png"
+                alt="Tampak depan aset tanah dan bangunan di Desa Dimong, Kecamatan Madiun, Kabupaten Madiun."
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH & BANGUNAN</span>
+              </div>
+              <h3>Tanah & Bangunan - Desa Dimong</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> Desa Dimong, Kecamatan Madiun, Kabupaten Madiun.
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>450 m²</strong></div>
+                <div><small>Luas toko</small><strong>49 m²</strong></div>
+                <div><small>Luas gudang</small><strong>123 m²</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 779.300.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="20">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="bangunan"
+            data-search="tanah bangunan di Desa Balerejo, Kecamatan Balerejo, Kab. Madiun, Jawa Timur."
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="21"
+              aria-label="Lihat foto aset tanah dan bangunan di Desa Balerejo, Kecamatan Balerejo, Kab. Madiun, Jawa Timur."
+            >
+              <img
+                src="assets/mulyadi4-1.png"
+                alt="Tampak depan aset tanah dan bangunan di Desa Balerejo, Kecamatan Balerejo, Kab. Madiun, Jawa Timur."
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH & BANGUNAN</span>
+              </div>
+              <h3>Tanah & Bangunan - Desa Balerejo</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> Desa Balerejo, Kecamatan Balerejo, Kab. Madiun, Jawa Timur.
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>575 m²</strong></div>
+                <div><small>Luas bangunan</small><strong>415 m²</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 985.300.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="21">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            data-type="bangunan"
+            data-search="tanah bangunan di Jl. Lingkungan Perumahan Desa Mejayan Kec. Mejayan Kab. Madiun."
+          >
+            <button
+              class="property-image-button open-modal"
+              data-property="22"
+              aria-label="Lihat foto aset tanah dan bangunan di Jl. Lingkungan Perumahan Desa Mejayan Kec. Mejayan Kab. Madiun."
+            >
+              <img
+                src="assets/sri-1.png"
+                alt="Tampak depan aset tanah dan bangunan di Jl. Lingkungan Perumahan Desa Mejayan Kec. Mejayan Kab. Madiun."
+                class="property-image"
+              />
+              <span class="image-count">▧ 4 foto & detail</span>
+            </button>
+            <div class="property-content">
+              <div class="card-meta">
+                <span class="status-pill">Informasi aset</span
+                ><span class="asset-type">TANAH & BANGUNAN</span>
+              </div>
+              <h3>Tanah & Bangunan - Desa Mejayan</h3>
+              <p class="location">
+                <span aria-hidden="true">⌖</span> Jl. Lingkungan Perumahan Desa Mejayan Kec. Mejayan Kab. Madiun.
+              </p>
+              <div class="property-stats">
+                <div><small>Luas tanah</small><strong>1.283 m²</strong></div>
+                <div><small>Kondisi Bangunan</small><strong>20 %</strong></div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <small>Harga limit</small
+                  ><strong class="price">Rp 1.162.865.000</strong>
+                </div>
+                <button class="detail-button open-modal" data-property="22">
+                  Lihat detail <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="empty-state" id="emptyState" hidden>
+          <strong>Aset tidak ditemukan.</strong>
+          <p>Coba kata kunci atau filter yang berbeda.</p>
+        </div>
+      </section>
+
+      <section class="info-band">
+        <div class="container info-band-inner">
+          <div class="info-icon">i</div>
+          <div>
+            <h2>Butuh informasi lebih lanjut?</h2>
+            <p>
+              Hubungi petugas untuk memperoleh informasi resmi mengenai objek,
+              persyaratan, jadwal, dan tata cara lelang.
+            </p>
+          </div>
+          <a class="button button-red" href="#kontak"
+            >Kontak Petugas <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="kontak">
+      <div class="container footer-main">
+        <div class="footer-brand">
+          <span class="brand-mark">BJ</span>
+          <div>
+            <strong>ASET LELANG</strong>
+            <p>Informasi aset tanah dan bangunan</p>
+          </div>
+        </div>
+        <div class="footer-address">
+          <span class="footer-label">KANTOR INFORMASI</span>
+          <p>
+            PT Bank Jatim Cabang Caruban<br />Jl. Panglima Sudirman No. 164,
+            Kab. Madiun
+          </p>
+        </div>
+
+        <div class="footer-contacts">
+          <span class="footer-label">KONTAK PETUGAS</span>
+          <p>
+            <strong>Oskar</strong><br />
+            <a
+              href="https://wa.me/628123354332?text=Halo%20Kak%20Oskar%2C%20saya%20tertarik%20dengan%20informasi%20aset%20lelang%20Bank%20Jatim.%20Mohon%20informasi%20lebih%20lanjut."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              0812 3354 332 — WhatsApp
+            </a>
+            <br /><br />
+
+            <strong>Prandika</strong><br />
+            <a
+              href="https://wa.me/6282234377432?text=Halo%20Kak%20Priandika%2C%20saya%20tertarik%20dengan%20informasi%20aset%20lelang%20Bank%20Jatim.%20Mohon%20informasi%20lebih%20lanjut."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              0822 3437 7432 — WhatsApp
+            </a>
+            <br /><br />
+
+            <strong>Gita</strong><br />
+            <a
+              href="https://wa.me/6281333960966?text=Halo%20Kak%20Gita%2C%20saya%20tertarik%20dengan%20informasi%20aset%20lelang%20Bank%20Jatim.%20Mohon%20informasi%20lebih%20lanjut."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              0813 3396 0966 — WhatsApp
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <span>© <span id="currentYear"></span> Katalog Aset Lelang</span
+          ><span
+            >Pastikan seluruh informasi diverifikasi melalui kanal resmi.</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="modal"
+      id="propertyModal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+    >
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-panel" role="document">
+        <button class="modal-close" id="modalClose" aria-label="Tutup detail">
+          ×
+        </button>
+        <div class="modal-gallery">
+          <div class="gallery-main">
+            <img id="mainGalleryImage" src="" alt="Foto detail aset" /><button
+              class="gallery-arrow gallery-prev"
+              id="galleryPrev"
+              aria-label="Foto sebelumnya"
+            >
+              ‹</button
+            ><button
+              class="gallery-arrow gallery-next"
+              id="galleryNext"
+              aria-label="Foto berikutnya"
+            >
+              ›</button
+            ><span class="gallery-counter" id="galleryCounter">1 / 4</span>
+          </div>
+          <div class="gallery-thumbs" id="galleryThumbs"></div>
+        </div>
+        <div class="modal-details">
+          <span class="section-kicker" id="modalType">DETAIL ASET</span>
+          <h2 id="modalTitle">Nama aset</h2>
+          <p class="modal-location" id="modalLocation"></p>
+          <div class="modal-price-box">
+            <small>Harga limit (contoh)</small><strong id="modalPrice"></strong
+            ><span>Harga dan status wajib dikonfirmasi ke petugas resmi.</span>
+          </div>
+          <div class="detail-list" id="modalFacts"></div>
+          <div class="modal-description">
+            <h3>Lokasi aset</h3>
+            <p id="modalAddress"></p>
+            <h3>Informasi & kontak</h3>
+          </div>
+          <a
+            class="button button-red modal-contact"
+            id="modalContact"
+            href="#"
+            onclick="return false;"
+          >
+            Hubungi Petugas <span aria-hidden="true">↗</span>
+          </a>
+
+          <div id="pilihanPetugas" class="pilihan-petugas" hidden>
+            <a
+              href="https://wa.me/628123354332?text=Halo%20Kak%20Oskar%2C%20saya%20tertarik%20dengan%20informasi%20aset%20lelang%20Bank%20Jatim.%20Mohon%20informasi%20lebih%20lanjut."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp Oskar
+            </a>
+            <a
+              href="https://wa.me/6282234377432?text=Halo%20Kak%20Priandika%2C%20saya%20tertarik%20dengan%20informasi%20aset%20lelang%20Bank%20Jatim.%20Mohon%20informasi%20lebih%20lanjut."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp Prandika
+            </a>
+            <a
+              href="https://wa.me/6281333960966?text=Halo%20Kak%20Gita%2C%20saya%20tertarik%20dengan%20informasi%20aset%20lelang%20Bank%20Jatim.%20Mohon%20informasi%20lebih%20lanjut."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp Gita
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
