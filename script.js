@@ -343,28 +343,6 @@ const properties = [
     ],
   },
   {
-    type: "TANAH",
-    title: "Tanah Pekarangan — Desa Nampu",
-    location: "Ds. Nampu, Kec. Gemarang, Kab. Madiun",
-    price: "Rp 99.000.000",
-    address: "Desa Nampu, Kecamatan Gemarang, Kabupaten Madiun, Jawa Timur.",
-    facts: [
-      ["Jenis aset", "Tanah pekarangan"],
-      ["Luas tanah", "1.882 m²"],
-      ["Dokumen", "SHM No. 650"],
-      ["Atas nama", "Suparno"],
-    ],
-    gallery: [
-      { src: "assets/suparno-1.png", alt: "Foto utama lahan" },
-      {
-        src: "assets/suparno-2.png",
-        alt: "Foto kondisi lahan dari sisi lain",
-      },
-      { src: "assets/suparno-lokasi.png", alt: "Peta lokasi aset" },
-      { src: "assets/suparno-harga.png", alt: "Poster informasi aset contoh" },
-    ],
-  },
-  {
     type: "TANAH & BANGUNAN",
     title: "Tanah & Bangunan",
     location: "Desa Sidomulyo, Kecamatan Wonoasri, Kabupaten Madiun.",
