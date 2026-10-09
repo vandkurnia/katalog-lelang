@@ -210,6 +210,13 @@ a {
   font-size: 17px;
   line-height: 1;
 }
+.hero-art {
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .art-card {
   position: absolute;
   border: 8px solid rgba(255, 255, 255, 0.85);
@@ -947,13 +954,13 @@ body.modal-open {
     font-size: 13px;
     max-width: 100%;
   }
-  .hero-art {
+  /* .hero-art {
     height: 205px;
     transform: scale(0.78);
     transform-origin: top center;
     margin-top: 7px;
     margin-bottom: -35px;
-  }
+  } */
   .catalog-section {
     padding-top: 43px;
     padding-bottom: 45px;
@@ -1095,6 +1102,7 @@ body.modal-open {
 .pilihan-petugas a:hover {
   background: #116d35;
 }
+
 
 .hero {
   position: relative;
