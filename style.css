@@ -210,13 +210,6 @@ a {
   font-size: 17px;
   line-height: 1;
 }
-.hero-art {
-  height: 300px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .art-card {
   position: absolute;
   border: 8px solid rgba(255, 255, 255, 0.85);
@@ -1101,4 +1094,28 @@ body.modal-open {
 
 .pilihan-petugas a:hover {
   background: #116d35;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-art {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  width: 45%;
+  max-width: 520px;
+  height: auto;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  object-fit: contain;
 }
